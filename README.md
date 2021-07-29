@@ -8,9 +8,9 @@ STL is for files, original source was not publicly aviable
 
 
 # E3D toolchange compatable railcore mod
-Main goal of the project is to receive fully functiona tool changer printer based on RC300 supporint 4+ heads
-It should be able to use with little/no modification standard e3d TC heads
-Due to design diff e3d parking models may not be used without full redesign.
+Main goal of the project is to receive fully functiona tool changer printer based on RC300 supporint 4+ heads:
+* e3d toolplate compatable. It should be able to use with little/no modification standard e3d TC heads
+* e3d parking hardware compatable. Due to design diff e3d parking models may not be used without full redesign.
 
 # High temperature compatable
 Another objective is to have an option to perform under 135C chamber temperature, 
