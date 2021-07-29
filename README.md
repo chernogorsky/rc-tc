@@ -49,8 +49,8 @@ Z is below the shaft center by 27.57 mm
 ## X
 X is 35.85 mm and 41.45 mm both sides from the center of the shaft
 
-## Z
-Z is 29.85 mm (without bltouch/httouch) / 46.4 mm with
+## Y
+Y is 29.85 mm (without bltouch/httouch) / 46.4 mm with from the back of the front plate (rail troley front side)
 
 # BOM
 
