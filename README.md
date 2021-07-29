@@ -3,3 +3,89 @@ Railcore 300 Tool-Changer (HightTemp compatable)
 
 
 STL is for files, original source was not publicly aviable
+
+# Goals
+
+# E3D toolchange compatable railcore mod
+Main goal of the project is to receive fully functiona tool changer printer based on RC300 supporint 4+ heads
+
+# High temperature compatable
+Another objective is to have an option to perform under 135C chamber temperature, 
+So:
+* all the motors are HT, or moved away from the chamber
+* Z probe may be HT probe or HT microswitch
+* all the plastic parts is prinetd with HT plastics
+
+
+# Dimentions
+<img width="551" alt="rc-tc-drawing" src="https://user-images.githubusercontent.com/5332569/127501504-d607ab26-c6cb-4ddb-bb29-99ad0ac055d9.png">
+
+
+## Height Diff
+Height diff between rail mounts and center of the shaft is "-6 mm"
+
+## Z
+Z is below the shaft center by 27.57 mm
+
+## X
+X is 35.85 mm and 41.45 mm both sides from the center of the shaft
+
+## Z
+Z is 29.85 mm (without bltouch/httouch) / 46.4 mm with
+
+# BOM
+
+## CNC
+* Face plate should be CNCed
+* May wont to mill/cnc twist lock
+
+## Plastic part
+* Since it's a HT version of the tool changer, all of the parts should be print with HT plastics, eventially
+* No heavy force is expected to any of the parts, except for the back pulley, so it may be print by any HT plastic. 
+* Back pulley is better to be print from something rigid and solid (Polymaker PCMAX; PC; etc) (for me  HT PLA with 100% infil works during all the tests)
+* Parking mounts - have to be rigid matereal, probably with CF inside.
+
+## Remote lock
+You need all the details for remote lock from jubilee design
+
+(Not a full list)
+* motor (im using stepperonline, so my mount is for it) (stepperonline/filastruder) (mine is 14HS13-0804S-PG5)
+* spring guide (https://www.filastruder.com/collections/jubilee/products/wire-cable-and-spring-guide-set-for-jubilee)
+* alum hub (https://www.filastruder.com/collections/jubilee/products/aluminum-hub-6mm-id)
+* pulley spring (2x https://www.filastruder.com/collections/jubilee/products/rel-replacement-extension-spring)
+* twist lock (https://www.filastruder.com/collections/jubilee/products/twist-lock-assembly-for-jubilee) * should be cutted with dremmel
+
+## Nozzle cleaning/whiping
+Im using mod from e3d mod and bigbrain3d whiper. If you decide to do that, you'll need 
+* HT pancake motor (LDO-42STH25-1404MAH)
+* 35 mm round HT motor with 8/10 teaths gear installed (LDO-36STH17-1004AHG8 or LDO-36STH17-1004AHG Stepper)
+
+## Tools
+Im using e3d plate and docks, so you may need some of these:
+* plate only 
+* plate with dock (https://www.filastruder.com/products/e3d-toolchanger-blank-tool-plate-and-dock-kit?_pos=4&_sid=0a385e1ae&_ss=r)
+* dock only (https://www.filastruder.com/products/e3d-toolchanger-dock-fixings-kit?pr_prod_strat=copurchase&pr_rec_pid=4507212218439&pr_ref_pid=4507215724615&pr_seq=uniform)
+
+## Electronics
+This project is required you have control board with  support for:
+* 5 axis (X, Y +3Z) steppers
+* 4 (your number) heads steppers
+* 1 remote lock motor steppers
+* (optional) 1 remote probe servo control
+* (optional) 2 steppers for HT wiper
+
+My setup is duet3 6hc + 2x 3hc + 1x ToolBoard
+
+
+# Tested setups
+## Original
+Im using RC300 with: 
+* alum full body (713Maker)
+* all the alums upgrades (mandala rose + 713maker):
+** belt tention is from mandala rose
+* magnum pulley (mandala rose)
+* Halo for nema17 (713Maker)
+* belts rated for 135C (e3d-online.com/hightemp3d.com)
+
+* Enclosure TBD (mandala rose/hightemp3d)
+
