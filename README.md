@@ -41,7 +41,7 @@ Here I want to be able to:
 
 
 ## Height Diff
-Height diff between rail mounts and center of the shaft is "-6 mm"
+Height diff between rail mounts and center of the shaft is "-6.6 mm"
 
 ## Z
 Z is below the shaft center by 27.57 mm
