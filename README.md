@@ -16,6 +16,16 @@ So:
 * Z probe may be HT probe or HT microswitch
 * all the plastic parts is prinetd with HT plastics
 
+# Stay as close to the original RC as possible
+Here I want to be able to:
+* utilize some of the upgrade I already have. so far in use:
+  * all the frame alums upgrades
+  * MR belts retainer
+  * upper part of BMG ultralight mount (as part for BMG/Mosquito head)
+* Be able to go back/forth without huge modification (currently its only removing the shaft)
+ * you may use any plate-on mods, like mounts (except for fan shrounds)
+ * no heavy hull mods 
+
 
 # Dimentions
 <img width="551" alt="rc-tc-drawing" src="https://user-images.githubusercontent.com/5332569/127501504-d607ab26-c6cb-4ddb-bb29-99ad0ac055d9.png">
@@ -82,7 +92,7 @@ My setup is duet3 6hc + 2x 3hc + 1x ToolBoard
 Im using RC300 with: 
 * alum full body (713Maker)
 * all the alums upgrades (mandala rose + 713maker):
-** belt tention is from mandala rose
+ * belt tention is from mandala rose
 * magnum pulley (mandala rose)
 * Halo for nema17 (713Maker)
 * belts rated for 135C (e3d-online.com/hightemp3d.com)
