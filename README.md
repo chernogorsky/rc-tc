@@ -4,6 +4,11 @@ Railcore 300 Tool-Changer (HightTemp compatable)
 
 STL is for files, original source was not publicly aviable
 
+# Current status
+Currently its a working setup, but has some minor flows to be addressed, so it may be named as a Beta stage.
+
+I have fully functional 3 tool-heads (hemera, sherpamini+nova, bmg+mosquito, with space for another big tool), high-temp compatable (not all the plastic has been reprinted with HT version) tool changer based on RC300
+
 # Goals
 
 
@@ -13,11 +18,12 @@ Main goal of the project is to receive fully functiona tool changer printer base
 * e3d parking hardware compatable. Due to design diff e3d parking models may not be used without full redesign.
 
 # High temperature compatable
-Another objective is to have an option to perform under 135C chamber temperature, 
+Another objective is to have an option to perform under *135C* chamber temperature and HT extruders, 
 So:
 * all the motors are HT, or moved away from the chamber
 * Z probe may be HT probe or HT microswitch
-* all the plastic parts is prinetd with HT plastics
+* all the plastic/other parts within enclosed area should be HT ready (HT plastic, silicon wiring, CNCed, ...)
+
 
 # Stay as close to the original RC as possible
 Here I want to be able to:
@@ -89,6 +95,15 @@ This project is required you have control board with  support for:
 
 My setup is duet3 6hc + 2x 3hc + 1x ToolBoard
 
+## Power and electronics layouts
+* I moved all the power supplies away from the printer
+* I have 24V 400W rated (AWG12/16) main power lines
+* I've utilized fully right side of the rc300 std electronic space and start using left side
+
+## Enclosure/chamber
+TBD,
+there is a working solution from HighTemp3d, and several custom made
+
 
 # Tested setups
 ## Original
@@ -100,5 +115,5 @@ Im using RC300 with:
 * Halo for nema17 (713Maker)
 * belts rated for 135C (e3d-online.com/hightemp3d.com)
 
-* Enclosure TBD (mandala rose/hightemp3d)
+* Enclosure TBD (mandala rose/hightemp3d/selfmade)
 
